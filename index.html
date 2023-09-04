@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEBSITE</title>
+    <style>
+        body{
+            background-color: black;
+            color:white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        img{
+            border:none;
+            border-radius: 10px;
+            margin-top:40px;
+            background-color:rgb(61, 68, 75);
+            padding:20px;
+            height:200px;
+            width:200px;
+        }
+        h2{
+            margin-left:10px;
+        }
+        @media only screen and (min-width:700px){
+         img{
+            border:none;
+            border-radius: 30px;
+            background-color:rgb(61, 68, 75);
+            padding:40px;
+            height:400px;
+            width:400px;
+        }
+        h2{
+            margin-left:60px;
+        }
+        }
+    </style>
+</head>
+<body>
+    <div align="center">
+        <img src="" id="image">
+    </div>
+        <h2>Dear Teachers,</h2>
+        <div align="center">
+        <P>Thank you to all our Teachers for guiding us in every path and making us
+           what we are today and going to be in tomorrow. Your passion for teaching
+         is truly contagious.Thank you for making positive impact on our live's.
+        </P><br>
+        <marquee direction="left"> thanks for being our teacher</marquee>
+    </div>
+    <script>
+        let image = document.getElementById('image');
+        let images =['image1.jpg','image2.jpg','image3.jpg'];
+        setInterval(function(){
+            let ran = Math.floor(Math.random() * 3);
+            image.src = images[ran];
+        },800);
+    </script>
+</body>
+</html>
